@@ -1,43 +1,143 @@
 ﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <meta charset="utf-8" />
     <title>YouTube Clone</title>
-    <style>
-        .thumbnail{
-            width: 300px;
-            display: block;
-        }
-        .titulo-video{
-            width: 300px;
-        }
-        .video-preview{
-            width: 300px;
-            display:inline-block;
-            vertical-align: top;
-            margin-right: 15px;
-        }
-        .barra-de-pesquisa{
-            display: block;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&
+    display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/geral.css">
+    <link rel="stylesheet" href="estilos/header.css">
+    <link rel="stylesheet" href="estilos/video.css">
 </head>
-<body>
-   
-    <kinput class="barra-de-pesquisa" type="text" placeholder="Pesquisar" />
 
-    <div class="video-preview">
-        <img class="thumbnail" src="assets/thumbnail-1.jpg">
-        <p class="titulo-video">lofi hip hop radio - beats to relax/study to</p>
-        <p class="autor-video">Lofi Girl</p>
-        <p class="video-stats">45 mil assistindo</p>
+<body>
+    <div class="header">
+        <div class="left-section">
+            <img class="menu" src="icons/menu.svg">
+            <img class="youtube-logo" src="icons/youtube-logo.svg">
+        </div>
+        <div class="middle-section">
+            <input class="barra-de-pesquisa" type="text" placeholder="Pesquisar" />
+            <button class="botao-lupa">
+                <img class="icone-lupa" src="icons/lupa.svg">
+            </button>
+            <button class="botao-microfone">
+                <img class="icone-microfone" src="icons/microfone.svg">
+            </button>
+        </div>
+        <div class="right-section">
+            <img class="icone-upload" src="icons/upload.svg">
+            <img class="icone-youtube-apps" src="icons/youtube-apps.svg">
+            <img class="icone-sino" src="icons/sino.svg">
+            <img class="icone-profile" src="channel-pictures/profile.jpg">
+        </div>
+        
+
     </div>
-    <div class="video-preview">
-        <img class="thumbnail" src="assets/thumbnail-2.webp">
-        <p class="titulo-video">Relaxing Whiskey Blues Music | Best Of Slow Blues</p>
-        <p class="autor-video">JAZZ & BLUES</p>
-        <p class="video-stats">12 mi de visualizações &#183; há 4 meses</p>
+    
+    <div class="video-grid">
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="assets/thumbnail-1.webp">
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="channel-pictures/profile-1.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="titulo-video">Jyn Erso and Hope Suite - ROGUE ONE // Danish National Symphony Orchestra</p>
+                    <p class="autor-video">DR Koncerthuset</p>
+                    <p class="video-stats">148 mil visualizações &#183; há 2 meses</p>
+                </div>
+            </div>
+        </div>
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="assets/thumbnail-2.webp">
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="channel-pictures/profile-2.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="titulo-video">Relaxing Whiskey Blues Music | Best Of Slow Blues /Rock Ballads | Fantastic
+                        Electric</p>
+                    <p class="autor-video">JAZZ & BLUES</p>
+                    <p class="video-stats">12 mi de visualizações &#183; há 4 meses</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="assets/thumbnail-3.webp">
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="channel-pictures/profile-3.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="titulo-video">The Batman Soundtrack - Vengeance Theme (Compilation)</p>
+                    <p class="autor-video">Flash Music</p>
+                    <p class="video-stats">341 mil visualizações &#183; há 1 mês</p>
+                </div>
+            </div>
+        </div>
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="assets/thumbnail-4.webp">
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="channel-pictures/profile-4.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="titulo-video">Python Tutorial for Begginers - Learn Python in 5 hours [FULL COURSE]</p>
+                    <p class="autor-video">TechWorld with Nana</p>
+                    <p class="video-stats">2,2 mi de visualizações &#183; há 1 ano</p>
+                </div>
+            </div>
+        </div>
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="assets/thumbnail-5.webp">
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="channel-pictures/profile-5.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="titulo-video">Le Castle Vania - John Wick Medley</p>
+                    <p class="autor-video">ALEXOP</p>
+                    <p class="video-stats">53 mi visualizações &#183; há 5 anos</p>
+                </div>
+            </div>
+        </div>
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="assets/thumbnail-6.webp">
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="channel-pictures/profile-6.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="titulo-video">Fortunate Son | Realistic Immersive Graphics | Call of Duty Black OpsCold War 8K RTX</p>
+                    <p class="autor-video">DraKulis Cinamatic Gaming</p>
+                    <p class="video-stats">1,2 mi DE visualizações &#183; há 3 meses</p>
+                </div>
+            </div>
+        </div>
+
+
     </div>
-</body>jj
+    
+</body>
+
 </html>
+<!-- Vídeo parado em 3:15:11
+https://youtu.be/G3e-cpL7ofc?t=11711 -->
