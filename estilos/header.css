@@ -3,7 +3,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-   
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+   background-color: white;
+   border-bottom: 1px solid rgb(228,228,228);
+   z-index: 100;
 }
 .left-section{
     display: flex;
@@ -42,14 +48,36 @@
 .botao-lupa{
     height: 40px;
     width: 66px;
-    background-color: rgb(240,240,240);
-    border: 1px solid rgb(192,192,192);
-    margin-left: -1px;
-    margin-right: 10px;
+}
+.botao-lupa,
+.botao-microfone,
+.icone-upload-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botao-lupa .tooltip,
+.botao-microfone .tooltip,
+.icone-upload-container{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.botao-lupa:hover .tooltip,
+.botao-microfone:hover .tooltip{
+    opacity: 1;
 }
 .icone-lupa{
     height: 25px;
-    margin-top: 4px;
 }
 .botao-microfone{
     height: 40px;
@@ -80,6 +108,20 @@
 }
 .icone-sino{
     height: 24px;
+}
+.container-sino{
+    position: relative;
+}
+.notification-count{
+    position: absolute;
+    top: -2px;
+    right: -5px;
+    background-color: rgb(200, 0, 0);
+    color: white;
+    font-family: Roboto,Arial;
+    font-size: 11px;
+    padding: 2px 5px;
+    border-radius: 10px;
 }
 .icone-profile{
     height: 32px;
