@@ -1,2 +1,2 @@
 # YouTube Clone
- Clone da página do YouTube como treinamento em tecologias front-end
+ Clone da página do YouTube como treinamento em tecnologias front-end
